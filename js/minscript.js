@@ -7,6 +7,8 @@ saundButton.addEventListener("click", (e) => {
 });
 
 window.onfocus = function () {
-  // saundButton.classList.add("paused");
-  saundButton.classList.contains(".paused") ? audio.pause() : audio.play();
+  saundButton.classList.contains("paused") ? audio.pause() : audio.play();
+};
+window.onblur = function () {
+  audio.pause();
 };
