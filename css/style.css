@@ -12,7 +12,7 @@
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -73,9 +73,9 @@ h6 {
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
-      touch-action: none;
+  touch-action: none;
   -ms-scroll-chaining: none;
-      overscroll-behavior: none;
+  overscroll-behavior: none;
 }
 
 .wrapper {
@@ -85,8 +85,8 @@ h6 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -98,8 +98,8 @@ h6 {
 
 .wrapper > main {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .wrapper > * {
@@ -113,82 +113,30 @@ h6 {
 Сніппет (HTML): cnt
 */
 
-[class*=__container] {
+[class*="__container"] {
   max-width: 75rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
 }
 
-[class*=-ibg] {
+[class*="-ibg"] {
   position: relative;
 }
 
-[class*=-ibg] img {
+[class*="-ibg"] img {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
-[class*=-ibg--contain] img {
+[class*="-ibg--contain"] img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
-
-/*
-.icon-menu {
-	display: none;
-	@media (max-width: $mobile) {
-		display: block;
-		position: relative;
-		width: toRem(30);
-		height: toRem(18);
-		z-index: 5;
-		@media (any-hover: none) {
-			cursor: default;
-		}
-		span,
-		&::before,
-		&::after {
-			content: "";
-			transition: all 0.3s ease 0s;
-			right: 0;
-			position: absolute;
-			width: 100%;
-			height: toRem(2);
-			background-color: #000;
-		}
-		&::before {
-			top: 0;
-		}
-		&::after {
-			bottom: 0;
-		}
-		span {
-			top: calc(50% - toRem(1));
-		}
-		.menu-open & {
-			span {
-				width: 0;
-			}
-			&::before,
-			&::after {
-			}
-			&::before {
-				top: calc(50% - toRem(1));
-				transform: rotate(-45deg);
-			}
-			&::after {
-				bottom: calc(50% - toRem(1));
-				transform: rotate(45deg);
-			}
-		}
-	}
-}
-*/
 
 :root {
   --index: calc(1vw + 1vh);
@@ -219,13 +167,13 @@ body {
   height: 100%;
   position: fixed;
   -webkit-perspective: 1500px;
-          perspective: 1500px;
+  perspective: 1500px;
   padding: 0 0.9375rem;
 }
 
 .gallary {
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   height: 100%;
 }
 
@@ -237,16 +185,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: var(--transition), opacity 0.75s ease-in-out;
   transition: var(--transition), opacity 0.75s ease-in-out;
   will-change: transfom;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .frame__contante {
@@ -257,11 +205,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -283,7 +231,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .left-image {
@@ -304,11 +252,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -ms-flex-align: start;
+  align-items: start;
 }
 
 .frame__text p {
@@ -397,8 +345,8 @@ body {
 
   .frame__text {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .frame__text p {
@@ -407,45 +355,45 @@ body {
 }
 
 @media (min-width: 20em) and (max-width: 75em) {
-@supports (font-size: clamp( 2.25rem , 1.4772727273rem  +  3.8636363636vw , 4.375rem )) {
+  @supports (font-size: clamp(2.25rem, 1.4772727273rem + 3.8636363636vw, 4.375rem)) {
     .frame__contante h1,
     .frame__contante h2,
     .frame__contante h3,
     .frame__contante h4 {
-      font-size: clamp( 2.25rem , 1.4772727273rem  +  3.8636363636vw , 4.375rem );
+      font-size: clamp(2.25rem, 1.4772727273rem + 3.8636363636vw, 4.375rem);
     }
-}
+  }
 
-@supports not (font-size: clamp( 2.25rem , 1.4772727273rem  +  3.8636363636vw , 4.375rem )) {
+  @supports not (font-size: clamp(2.25rem, 1.4772727273rem + 3.8636363636vw, 4.375rem)) {
     .frame__contante h1,
     .frame__contante h2,
     .frame__contante h3,
     .frame__contante h4 {
       font-size: calc(2.25rem + 2.125 * (100vw - 20rem) / 55);
     }
-}
+  }
 
-@supports (font-size: clamp( 0.75rem , 0.3409090909rem  +  2.0454545455vw , 1.875rem )) {
+  @supports (font-size: clamp(0.75rem, 0.3409090909rem + 2.0454545455vw, 1.875rem)) {
     .frame__text p {
-      font-size: clamp( 0.75rem , 0.3409090909rem  +  2.0454545455vw , 1.875rem );
+      font-size: clamp(0.75rem, 0.3409090909rem + 2.0454545455vw, 1.875rem);
     }
-}
+  }
 
-@supports not (font-size: clamp( 0.75rem , 0.3409090909rem  +  2.0454545455vw , 1.875rem )) {
+  @supports not (font-size: clamp(0.75rem, 0.3409090909rem + 2.0454545455vw, 1.875rem)) {
     .frame__text p {
       font-size: calc(0.75rem + 1.125 * (100vw - 20rem) / 55);
     }
-}
+  }
 
-@supports (font-size: clamp( 0.5rem , 0.2045454545rem  +  1.4772727273vw , 1.3125rem )) {
+  @supports (font-size: clamp(0.5rem, 0.2045454545rem + 1.4772727273vw, 1.3125rem)) {
     .frame-center {
-      font-size: clamp( 0.5rem , 0.2045454545rem  +  1.4772727273vw , 1.3125rem );
+      font-size: clamp(0.5rem, 0.2045454545rem + 1.4772727273vw, 1.3125rem);
     }
-}
+  }
 
-@supports not (font-size: clamp( 0.5rem , 0.2045454545rem  +  1.4772727273vw , 1.3125rem )) {
+  @supports not (font-size: clamp(0.5rem, 0.2045454545rem + 1.4772727273vw, 1.3125rem)) {
     .frame-center {
       font-size: calc(0.5rem + 0.8125 * (100vw - 20rem) / 55);
     }
-}
+  }
 }

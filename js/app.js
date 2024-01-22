@@ -24,7 +24,7 @@
     }
   }, 0);
   //-------------------------------------------------------------------//
-  let zSpacing = -1e3;
+  let zSpacing = -13;
   let lastPos = zSpacing / 5;
   let script_frames = Array.from(document.getElementsByClassName("frame"));
   let zVals = [];
